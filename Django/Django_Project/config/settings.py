@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'edudb',
-        'USER': 'root',
-        'PASSWORD': '5928',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': '1234',
+        'USER': '1234',
+        'PASSWORD': '0000',
+        'HOST': '0.0.0.0',
+        'PORT': '0',
     }
 }
 
