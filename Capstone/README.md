@@ -1,8 +1,8 @@
 # Capstone 
 
-## 졸업작품 'TTS를 활용한 동화책 애플리캐이션' Audio Streaming Server-Client 코드
+### 졸업작품 'TTS를 활용한 동화책 애플리캐이션' Audio Streaming Server-Client 코드
 
-## 개발 배경 
+### 개발 배경 
 
 - 클라이언트와 서버간의 통신 속도를 고려하여 UDP 통신 프로토콜 활용 결정
 
