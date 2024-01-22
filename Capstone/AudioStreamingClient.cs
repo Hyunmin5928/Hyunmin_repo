@@ -6,8 +6,8 @@ using System.Text;
 
 public class AudioStreamingClient : MonoBehaviour
 {
-    public string serverHost = "114.70.63.57"; // 서버 IP 주소
-    public int serverPort = 20003; // 서버 포트 번호
+    public string serverHost = "0.0.0.0"; // 서버 IP 주소
+    public int serverPort = 0; // 서버 포트 번호
 
     private UdpClient udpClient;
     private AudioSource audioSource;
@@ -93,11 +93,6 @@ public class AudioStreamingClient : MonoBehaviour
                     receivedPacketCount++;
                     Debug.Log($"수신 된 패킷개수: {receivedPacketCount}");
 
-                    // 패킷의 끝을 확인하여 전체 WAV 파일을 수신한 경우 재생 및 저장합니다.
-                    //if ((packetData[0] + 1) == expectedPacketCount)
-                    //{
-                    //    isLastPacketReceived = true;  // 패킷 헤더의 첫 번째 비트가 1이면 마지막 패킷임
-                    //}
                     // 수신한 패킷의 순서가 기대하는 패킷 번호와 일치하는지 확인
                     if (receivedPacketCount == expectedPacketCount)
                     {

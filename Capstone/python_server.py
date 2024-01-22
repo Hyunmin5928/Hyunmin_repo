@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG, format='[%(asctime)s] %(message)s')
 
 # 포트번호와 IP주소 설정
 host = '0.0.0.0'  # 모든 Network Interface에서 수신이 가능
-port = 6006       # 해당 포트번호는 변경해야 함.
+port = 0       # 해당 포트번호는 변경해야 함.
 buf_size = 4096
 
 # rb모드로 wav파일을 열기
